@@ -1,0 +1,10 @@
+.wrapper {
+  margin-top: 50px;
+  text-align: center;
+}
+:global {
+  .ant-form-item {
+    align-items: center;
+    justify-content: center;
+  }
+}

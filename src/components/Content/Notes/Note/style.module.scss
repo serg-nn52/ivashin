@@ -1,0 +1,22 @@
+.text {
+  width: 100%;
+  margin: 0;
+}
+.buttons {
+  width: 100%;
+  text-align: right;
+  button {
+    border: none;
+    padding: 0;
+    margin-left: 10px;
+    background-color: inherit;
+    color: #3c3cce;
+    font-size: 12px;
+    text-decoration: underline;
+  }
+}
+:global {
+  .ant-list-item {
+    flex-direction: column;
+  }
+}

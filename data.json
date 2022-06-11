@@ -1,0 +1,37 @@
+{
+  "nodes": [
+    {
+      "id": "1",
+      "text": "first node1"
+    },
+    {
+      "id": "2",
+      "text": "first node2"
+    },
+    {
+      "id": "3",
+      "text": "first node3"
+    },
+    {
+      "id": "4",
+      "text": "first node4"
+    },
+    {
+      "id": "dc5abdc4-25c2-4354-b5f1-1ec4de296f69",
+      "text": "Hello, all is OK!"
+    },
+    {
+      "id": "63867201-d0f7-4a1a-a7f8-97bf625befa2",
+      "text": "345"
+    },
+    {
+      "id": "7f983210-8271-487c-9b66-511ce47065ab",
+      "text": "79878"
+    },
+    {
+      "id": "7c540d12-cd57-4b01-8460-a1321f2d95bb",
+      "text": "677i0"
+    }
+  ],
+  "tags": []
+}

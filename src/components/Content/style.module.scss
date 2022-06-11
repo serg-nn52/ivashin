@@ -1,0 +1,9 @@
+@import 'styles/colors';
+.wrapper {
+  min-height: calc(100vh - 200px);
+  background-color: $bc-main;
+  padding: 1rem;
+  h1 {
+    text-align: center;
+  }
+}

@@ -3,8 +3,9 @@ import { List } from 'antd';
 import { useAppDispatch } from 'hooks/useAppDispatch';
 import { getNodes } from 'store/nodes/thunk';
 import { useAppSelector } from 'hooks/useAppSelector';
-import { getAllNodesSelector, getIsLoading } from 'store/nodes/selectors';
+import { getIsLoading } from 'store/nodes/selectors';
 import Preloader from 'components/Preloader';
+import { selectNodesByFilter } from 'store/filtres/selectors';
 import Note from './Note';
 
 type TData = {
@@ -14,7 +15,7 @@ type TData = {
 
 const Notes: React.FC = () => {
   const dispatch = useAppDispatch();
-  const nodes = useAppSelector(getAllNodesSelector);
+  const nodes = useAppSelector(selectNodesByFilter);
   const isLoading = useAppSelector(getIsLoading);
 
   useEffect(() => {

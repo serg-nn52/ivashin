@@ -7,3 +7,8 @@
     text-align: center;
   }
 }
+:global {
+  .ant-btn {
+    margin-top: 20px;
+  }
+}

@@ -1,12 +1,8 @@
 {
   "nodes": [
     {
-      "id": "1",
-      "text": "first node1"
-    },
-    {
       "id": "2",
-      "text": "first node2"
+      "text": "first node2 #grtytr gfhjgh #fgxjhgjkhk #fghghj"
     },
     {
       "id": "3",
@@ -14,7 +10,7 @@
     },
     {
       "id": "4",
-      "text": "first node4"
+      "text": "first #node3 #node4"
     },
     {
       "id": "dc5abdc4-25c2-4354-b5f1-1ec4de296f69",
@@ -22,15 +18,23 @@
     },
     {
       "id": "63867201-d0f7-4a1a-a7f8-97bf625befa2",
-      "text": "345"
+      "text": "first #node4  проверка тэгов #node3"
     },
     {
       "id": "7f983210-8271-487c-9b66-511ce47065ab",
-      "text": "79878"
+      "text": "first node5"
     },
     {
-      "id": "7c540d12-cd57-4b01-8460-a1321f2d95bb",
-      "text": "677i0"
+      "id": "7063b9bb-f9ec-4fc6-9bd7-b0d605bfaa22",
+      "text": "Привет, вроде все #работает! Осталось сделать фильтры! #fgdfgh"
+    },
+    {
+      "id": "abe18364-79d7-4d86-978d-b35337bc7a9b",
+      "text": "#fdgf dfghfgh dffgd"
+    },
+    {
+      "id": "e75c8d82-afd3-49fd-a7df-e2e067f0d32a",
+      "text": "dfgfg sgdfg #dfg. #node3 #node5"
     }
   ],
   "tags": []

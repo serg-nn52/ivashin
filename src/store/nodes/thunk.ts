@@ -38,3 +38,15 @@ export const addNodeThunk = createAsyncThunk(
     }
   },
 );
+
+export const putNodeThunk = createAsyncThunk(
+  `nodes/putNode`,
+  async (node: TNodes, { rejectWithValue }) => {
+    try {
+      await axiosInstance.put(`/nodes/${node.id}`, node);
+      return node;
+    } catch (error: any) {
+      return rejectWithValue(error);
+    }
+  },
+);

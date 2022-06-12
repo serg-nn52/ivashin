@@ -1,6 +1,9 @@
 .text {
   width: 100%;
   margin: 0;
+  span {
+    background-color: #f0c5f0;
+  }
 }
 .buttons {
   width: 100%;
@@ -15,8 +18,21 @@
     text-decoration: underline;
   }
 }
+input {
+  width: 100%;
+  background-color: inherit;
+  border: none;
+}
+.tags {
+  display: block;
+  width: 100%;
+  text-align: left;
+}
 :global {
   .ant-list-item {
     flex-direction: column;
+  }
+  .ant-tag {
+    cursor: pointer;
   }
 }

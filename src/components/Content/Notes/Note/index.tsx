@@ -19,11 +19,9 @@ const Note: React.FC<TProps> = ({ text, id }) => {
   const defaultValue = useAppSelector(getValue(id));
   const input = useRef<HTMLInputElement>(null);
   const tags: string[] = [];
-  const textWithTags = text.replace(
-    /\B#[A-Za-zА-Яа-я0-9_][A-Za-zА-Яа-я0-9_]+/gi,
-    '<span>$&</span>',
-  );
-  text.replace(/\B#[A-Za-zА-Яа-я0-9_][A-Za-zА-Яа-я0-9_]+/gi, (match) => {
+  const pattern = /\B#[A-Za-zА-Яа-я0-9_][A-Za-zА-Яа-я0-9_]+/gi;
+  const textWithTags = text.replace(pattern, '<span>$&</span>');
+  text.replace(pattern, (match) => {
     tags.push(match);
     return match;
   });

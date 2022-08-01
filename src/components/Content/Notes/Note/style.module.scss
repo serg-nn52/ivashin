@@ -9,13 +9,17 @@
   width: 100%;
   text-align: right;
   button {
-    border: none;
-    padding: 0;
+    padding: 3px 10px;
     margin-left: 10px;
-    background-color: inherit;
-    color: #3c3cce;
+    color: white;
     font-size: 12px;
-    text-decoration: underline;
+    background-color: grey;
+    border: none;
+    border-radius: 10px;
+    transition-duration: 0.3s;
+    &:hover {
+      background-color: lighten(grey, 10%);
+    }
   }
 }
 input {
@@ -34,5 +38,8 @@ input {
   }
   .ant-tag {
     cursor: pointer;
+    &:hover {
+      background-color: darken(#fff0f6, 5%);
+    }
   }
 }

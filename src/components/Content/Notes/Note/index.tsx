@@ -54,14 +54,6 @@ const Note: React.FC<TProps> = ({ text, id }) => {
       ) : (
         <input defaultValue={defaultValue} ref={input} />
       )}
-      <div className={style.buttons}>
-        <button type="button" onClick={editHandler}>
-          {isEdit ? 'Редактировать' : 'Сохранить'}
-        </button>
-        <button type="button" onClick={deleteNode}>
-          Удалить
-        </button>
-      </div>
       <div className={style.tags}>
         {tags.map((el, i) => {
           return (
@@ -71,6 +63,14 @@ const Note: React.FC<TProps> = ({ text, id }) => {
             </Tag>
           );
         })}
+      </div>
+      <div className={style.buttons}>
+        <button type="button" onClick={editHandler}>
+          {isEdit ? 'Редактировать' : 'Сохранить'}
+        </button>
+        <button type="button" onClick={deleteNode}>
+          Удалить
+        </button>
       </div>
     </List.Item>
   );

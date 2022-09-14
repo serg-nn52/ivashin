@@ -1,0 +1,14 @@
+@import 'styles/colors';
+@import 'styles/media';
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 50px 20px;
+  min-height: 100vh;
+  background: linear-gradient(90deg, $bg-first 0%, $bg-second 100%);
+  @include media-breakpoint-down(sm) {
+    padding: 20px 10px;
+  }
+}

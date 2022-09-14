@@ -1,0 +1,43 @@
+@import 'styles/colors';
+@import 'styles/media';
+
+.input {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  @include media-breakpoint-down(sm) {
+    gap: 3px;
+  }
+  label {
+    color: $label-color;
+  }
+  input {
+    height: 30px;
+    padding: 3px 10px;
+    border: none;
+    cursor: pointer;
+    color: $black;
+    border-radius: 5px;
+    background-color: $white;
+    &::placeholder {
+      opacity: 0.8;
+    }
+    &:focus {
+      padding: 2px 9px;
+      border: 1px $blue solid;
+      outline: none;
+    }
+  }
+  .error {
+    height: 15px;
+    color: $error-color;
+    @include media-breakpoint-down(sm) {
+      font-size: 14px;
+    }
+  }
+  .hide {
+    opacity: 0;
+    height: 15px;
+  }
+}

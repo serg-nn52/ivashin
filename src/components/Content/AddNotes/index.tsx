@@ -1,7 +1,7 @@
 import { Button, Form } from 'antd';
 import TextArea from 'antd/lib/input/TextArea';
 import { useAppDispatch } from 'hooks/useAppDispatch';
-import React from 'react';
+import React, { useState } from 'react';
 import { addNodeThunk } from 'store/nodes/thunk';
 import { TNodes } from 'store/nodes/types';
 import { v4 as uuidv4 } from 'uuid';
@@ -9,15 +9,15 @@ import style from './style.module.scss';
 
 const AddNotes: React.FC = () => {
   const dispatch = useAppDispatch();
+  const [valueNode, setValueNode] = useState('');
   const addNode = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const node: TNodes = {
       id: uuidv4(),
       text: (e.target as HTMLFormElement).textarea.value,
     };
-    // console.log(node);
     dispatch(addNodeThunk(node));
-    (e.target as HTMLFormElement).textarea.value = null;
+    setValueNode('');
   };
 
   return (
@@ -30,7 +30,12 @@ const AddNotes: React.FC = () => {
         name="newNode"
       >
         <Form.Item>
-          <TextArea name="textarea" rows={4} />
+          <TextArea
+            name="textarea"
+            rows={4}
+            value={valueNode}
+            onChange={(e) => setValueNode(e.target.value)}
+          />
         </Form.Item>
         <Form.Item>
           <Button type="primary" htmlType="submit">

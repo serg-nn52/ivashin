@@ -1,17 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
+import CreateRoutes from 'containers/CreateRoutes';
 import React from 'react';
-import Content from 'components/Content';
-import Footer from 'components/Footer';
-import Header from 'components/Header';
 
 const App: React.FC = () => {
-  return (
-    <>
-      <Header />
-      <Content />
-      <Footer />
-    </>
-  );
+  return <CreateRoutes />;
 };
 
 export default App;

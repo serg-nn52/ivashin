@@ -4,6 +4,7 @@ import './styles/index.scss';
 import { Provider } from 'react-redux';
 import store from 'store';
 import { BrowserRouter } from 'react-router-dom';
+import ErrorBoundary from 'antd/lib/alert/ErrorBoundary';
 import App from './containers/App';
 
 const root = ReactDOM.createRoot(
@@ -13,7 +14,9 @@ root.render(
   <React.StrictMode>
     <Provider store={store}>
       <BrowserRouter>
-        <App />
+        <ErrorBoundary>
+          <App />
+        </ErrorBoundary>
       </BrowserRouter>
     </Provider>
   </React.StrictMode>,

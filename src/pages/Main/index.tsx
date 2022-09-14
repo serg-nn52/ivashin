@@ -1,3 +1,4 @@
+import ErrorBoundary from 'antd/lib/alert/ErrorBoundary';
 import Content from 'components/Content';
 import Footer from 'components/Footer';
 import Header from 'components/Header';
@@ -18,7 +19,9 @@ const Main: React.FC = () => {
   return (
     <div className={style.wrapper}>
       <Header />
-      <Content />
+      <ErrorBoundary>
+        <Content />
+      </ErrorBoundary>
       <Footer />
     </div>
   );

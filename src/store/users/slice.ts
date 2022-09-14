@@ -3,11 +3,9 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { TStateTypeUser, TUser } from './types';
 
 const initialState: TStateTypeUser = {
-  loading: false,
   uid: '',
   email: '',
   accessToken: '',
-  error: null,
 };
 const userSlice = createSlice({
   name: 'user',
